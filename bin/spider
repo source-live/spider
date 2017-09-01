@@ -1,0 +1,10 @@
+#!env/python
+
+from spider import *
+
+import sys
+
+if len(sys.args) > 1:
+  print("Incorrect usage.  Use like: spider [FILENAME]")
+else:
+  spider_parse(sys.args[0])
